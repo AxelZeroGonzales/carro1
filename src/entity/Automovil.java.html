@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+<title></title>
+  <style type="text/css">
+    <!--code { font-family: Courier New, Courier; font-size: 10pt; margin: 0px; }.style1 {
+	color: #7f0055;
+	font-weight: bold;
+}
+.style2 {color: #000000}
+-->
+  </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+</head>
+<body>
+
+
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+
+   <td nowrap="nowrap" valign="top" align="left">
+     <p><code>
+       <font color="#7f0055"><b>package&nbsp;</b></font><font color="#000000">entrenadores.instanciacionCarro.mundo;</font><br/>
+       <font color="#ffffff"></font><br/>
+       <font color="#3f5fbf">/**</font><br/>
+       <font color="#ffffff">&nbsp;</font><font color="#3f5fbf">*&nbsp;Modela&nbsp;el&nbsp;comportamiento&nbsp;de&nbsp;un&nbsp;Automovil:&nbsp;gasolina,&nbsp;color,&nbsp;velocidad&nbsp;y&nbsp;posici&oacute;n</font><br/>
+       <font color="#ffffff">&nbsp;</font><font color="#3f5fbf">*/</font><br/>
+       <font color="#7f0055"><b>public&nbsp;class&nbsp;</b></font><font color="#000000">Automovil&nbsp;</font><font color="#000000">{</font><br/>
+       <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br/>
+       <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//-----------------------------------------------------------</font><br/>
+       <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;Atributos</font><br/>
+       <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//-----------------------------------------------------------</font><br/>
+       <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br/>
+       <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">velocidad;</font><br/>
+       <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">gasolina;</font><br/>
+       <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">colorR;</font><br/>
+       <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">colorG;</font><br/>
+       <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>private&nbsp;</b></font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">colorB;</font><br/>
+	   <font color="#7f0055">&nbsp;&nbsp;&nbsp;&nbsp;<b>private&nbsp;double&nbsp;</b></font><font color="#000000">distancia;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//-----------------------------------------------------------</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;Constructor</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//-----------------------------------------------------------</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">/**</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;Construye&nbsp;un&nbsp;Autom&oacute;vil&nbsp;con&nbsp;la&nbsp;cantidad&nbsp;de&nbsp;gasolina&nbsp;especificada</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;</font><font color="#7f9fbf">@param&nbsp;</font><font color="#3f5fbf">gasolinaP&nbsp;-&nbsp;cantidad&nbsp;de&nbsp;gasolina&nbsp;-&nbsp;gasolinaP&nbsp;&gt;=&nbsp;0</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*/</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">Automovil</font><font color="#000000">(</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">gasolinaP</font><font color="#000000">)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">gasolina&nbsp;=&nbsp;gasolinaP;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">velocidad</font><font color="#000000">&nbsp;=&nbsp;50;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">distancia</font><font color="#000000">&nbsp;=&nbsp;0;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">colorR</font><font color="#000000">&nbsp;=&nbsp;255;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">colorG</font><font color="#000000">&nbsp;=&nbsp;0;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">colorB</font><font color="#000000">&nbsp;=&nbsp;0;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//-----------------------------------------------------------</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//&nbsp;M&eacute;todos</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f7f5f">//-----------------------------------------------------------</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">/**</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;Asigna&nbsp;el&nbsp;color&nbsp;con&nbsp;el&nbsp;que&nbsp;se&nbsp;debe&nbsp;pintar&nbsp;el&nbsp;autom&oacute;vil.</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;</font><font color="#7f9fbf">@param&nbsp;</font><font color="#3f5fbf">rP&nbsp;-&nbsp;&iacute;ndice&nbsp;de&nbsp;rojo&nbsp;-&nbsp;0&lt;=&nbsp;rP&nbsp;&lt;&nbsp;256&nbsp;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;</font><font color="#7f9fbf">@param&nbsp;</font><font color="#3f5fbf">gP&nbsp;-&nbsp;&iacute;ndice&nbsp;de&nbsp;verde&nbsp;-&nbsp;0&lt;=&nbsp;gP&nbsp;&lt;&nbsp;256&nbsp;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;</font><font color="#7f9fbf">@param&nbsp;</font><font color="#3f5fbf">bP&nbsp;-&nbsp;&iacute;ndice&nbsp;de&nbsp;azul&nbsp;-&nbsp;0&lt;=&nbsp;bP&nbsp;&lt;&nbsp;256&nbsp;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*/</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">asignarColor</font><font color="#000000">(</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">rP,&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">gP,&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">bP</font><font color="#000000">)&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">colorR&nbsp;=&nbsp;rP;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">colorG&nbsp;=&nbsp;gP;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">colorB&nbsp;=&nbsp;bP;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">/**</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;Asigna&nbsp;la&nbsp;velocidad&nbsp;a&nbsp;la&nbsp;que&nbsp;debe&nbsp;ir&nbsp;el&nbsp;autom&oacute;vil</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;</font><font color="#7f9fbf">@param&nbsp;</font><font color="#3f5fbf">velocidadP&nbsp;-&nbsp;velocidad&nbsp;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*/</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#7f0055"><b>void&nbsp;</b></font><font color="#000000">asignarVelocidad</font><font color="#000000">(</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">velocidadP</font><font color="#000000">)&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">velocidad&nbsp;=&nbsp;velocidadP;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br/>
+		  <br />
+          <br />
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">/**</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;Asigna&nbsp;la&nbsp;gasolina para &nbsp;el&nbsp;autom&oacute;vil</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;</font><font color="#7f9fbf">@param&nbsp;</font><font color="#3f5fbf">gasolina</font><font color="#3f5fbf">P&nbsp;-&nbsp;gasolina&nbsp;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*/</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;void&nbsp;</b></font><font color="#000000">asignarGasolina(</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">gasolina</font><font color="#000000">P)&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">gasolina&nbsp;=&nbsp;gasolinaP;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br>
+		  <br>
+		  <br>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">/**</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;Asigna&nbsp;la&nbsp;distancia para &nbsp;el&nbsp;autom&oacute;vil</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;</font><font color="#7f9fbf">@param&nbsp;</font><font color="#3f5fbf">distancia</font><font color="#3f5fbf">P&nbsp;-&nbsp;distancia&nbsp;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*/</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;void&nbsp;</b></font><font color="#000000">asignarDistancia(</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">distanciaP)&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">distancia</font><font color="#000000">&nbsp;=&nbsp;distanciaP;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font> <br>
+		  <br><br>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">/**</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;Retorna el color del automovil</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;</font><font color="#7f9fbf">@return&nbsp;</font><font color="#3f5fbf">Color&nbsp;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*/</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public&nbsp;</b></font><font color="#000000">Color darColor(</font><font color="#000000">)&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b><strong>return new</strong> </b></font><font color="#000000">Color(colorR, colorG, colorB</font><b><font color="#000000">);</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font></b> <br />
+          <br />
+          <br />
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">/**</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;Retorna la cantidad de gasolina del automovil</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;</font><font color="#7f9fbf">@return&nbsp;</font><font color="#3f5fbf">int&nbsp;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*/</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public int</b></font><font color="#000000"> darGasolina(</font><font color="#000000">)&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b><strong>return </strong></b></font><font color="#000000">gasolina</font><b><font color="#000000">;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font></b><font color="#000000">}</font><br />
+          <br />
+          <br />
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">/**</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;Retorna la velocidad del automovil</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;</font><font color="#7f9fbf">@return&nbsp;</font><font color="#3f5fbf">int&nbsp;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*/</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public int</b></font><font color="#000000"> darVelocidad()&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b><strong>return </strong></b></font><font color="#000000">velocidad</font><b><font color="#000000">;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font></b><font color="#000000">}</font><br />
+          <br />
+          <br />
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">/**</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;Calcula la distancia recorrida por el automovil en una iteracion, teniendo en cuenta su velocidad</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;</font><font color="#7f9fbf">@return&nbsp;</font><font color="#3f5fbf">double&nbsp;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*/</font><br/>
+        <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public double </b></font><font color="#000000"> calcularDistanciaAvance()&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</font></code><code><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if</b></font><font color="#000000"> (gasolina>0)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;distancia= distancia + velocidad; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b><strong>return </strong></b></font><font color="#000000">distancia</font><b><font color="#000000">;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font></b><font color="#000000">}</font><br />
+          <br />
+          <br />
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">/**</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;Calcula una nueva distancia despues de haber avanzado</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;</font><font color="#7f9fbf">@return&nbsp;</font><font color="#3f5fbf">double&nbsp;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*/</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public double </b></font><font color="#000000"> calcularDistanciaDespuesAvance()&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">distancia = distancia - velocidad;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b><strong>return </strong></b></font><font color="#000000">distancia</font><b><font color="#000000">;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font></b><font color="#000000">}</font><br />
+          <br />
+          <br />
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">/**</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;Calcula la gasolina en un momento dado teniendo cuenta el  avance</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*&nbsp;</font><font color="#7f9fbf">@return&nbsp;</font><font color="#3f5fbf">double&nbsp;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#3f5fbf">*/</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>public int </b></font><font color="#000000"> calcularGasolinaDespuesAvance()&nbsp;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b><strong>if </strong></b></font><font color="#000000">(gasolina &gt; 0)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b></b></font><font color="#000000">gasolina = gasolina - Math.abs(velocidad);</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><span class="style2">}</span><font color="#7f0055"><b><strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else</strong></b></font><font color="#000000"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">gasolina = 0;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b><font color="#000000">}</font><br />
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b><strong>return </strong></b></font><font color="#000000">distancia</font><b><font color="#000000">;</font><br/>
+          <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font></b><font color="#000000">}</font><br />
+        </code></p>
+     <p><code><font color="#000000">}</font></code> </p></td>
+
+   </tr>
+   <tr>
+     <td nowrap="nowrap" valign="top" align="left">&nbsp;</td>
+   </tr>
+</table>
+</div>
+
+
+</body></html>
