@@ -62,6 +62,7 @@ public class Instanciacion extends JFrame {
 	public static void main(String[] args) {
 		Instanciacion interfazPrincipal = new Instanciacion();
 		interfazPrincipal.setVisible(true);
+	
 	}
 
 	public void init() {

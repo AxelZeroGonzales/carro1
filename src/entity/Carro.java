@@ -46,8 +46,8 @@ public class Carro {
 		if (this.selected) {
 			g.setColor(this.instancia.darColor());
 			g.fillRect(this.posicion.x, this.posicion.y + 80, 90, 60);
-			g.drawImage(this.imagen, this.posicion.x + 5, this.posicion.y + 80 + 5, null);
-		} else {
+			g.drawImage(this.imagen, this.posicion.x + 5, this.posicion.y + 80 +5 , null);
+		} else { 
 			g.setColor(this.instancia.darColor());
 			g.fillRect(this.posicion.x, this.posicion.y + 80, 80, 50);
 			g.drawImage(this.imagen, this.posicion.x, this.posicion.y + 80, null);
